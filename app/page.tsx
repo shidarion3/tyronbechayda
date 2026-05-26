@@ -18,7 +18,7 @@ export default function Home() {
   const [time, setTime] = useState("");
   const [isAtBottom, setIsAtBottom] = useState(false);
 
-  const skills = ["Web Development", "Video Editing", "Content Creation", "Digital Systems", "Flutter Apps"];
+  const skills = ["Web Systems", "Video Edits", "Digital Content", "Architecture", "Flutter Apps"];
   const constraintsRef = useRef(null); 
 
   // --- MOCK DATA: MEDIA PROJECTS ---
@@ -311,7 +311,7 @@ export default function Home() {
               <span className="w-2.5 h-2.5 bg-fuchsia-500 animate-ping"></span> SYS.STATUS: OPEN_FOR_PROJECTS
             </div>
             <h1 className="text-5xl md:text-8xl font-black mb-6 tracking-tighter leading-[1.1] uppercase">
-              I DO <br className="hidden md:block"/>
+              Building <br className="hidden md:block"/>
               <span className="relative inline-flex items-center w-full justify-center text-cyan-400 h-[1.2em]">
                 <AnimatePresence mode="wait">
                   <motion.span key={skillIndex} initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -15 }} transition={{ duration: 0.2 }} className="absolute text-center whitespace-nowrap drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] glitch-hover" data-text={skills[skillIndex]}>{skills[skillIndex]}</motion.span>
